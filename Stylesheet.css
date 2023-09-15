@@ -23,18 +23,23 @@ header{
     text-align: center;
 }
 
-#sidebar{
-    width: 10%;
-    padding: 1rem;
-    background-color: #04e0bc;
-
-}
-
 #footer{
     font-family: sans-serif;
     font-size: 110%;
     background-color: rgb(170, 162, 162);
     padding: 1rem
+}
+
+#footer {
+    position: sticky;
+    bottom: 0%;
+}
+
+#sidebar{
+    width: 10%;
+    padding: 1rem;
+    background-color: #04e0bc;
+
 }
 
 section{
@@ -47,4 +52,33 @@ section{
 img{
     border-radius: 50%;
     border: 5px solid;
+}
+
+#back-to-top > button{
+    background-color: rgb(33, 64, 206);
+    border-radius: 50%;
+    border: solid 1px rgb(33, 64, 206);
+    width: 50px;
+    height: 50px;
+}
+
+#back-to-top:hover > button {
+    border: solid 1px rgb(33, 64, 206);
+    background-color: rgb(77, 219, 141);
+    
+}
+#back-to-top > button {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+
+#back-to-top:hover > button {
+    text-decoration: none;
+    color: rgb(33, 64, 206);
+}
+
+#back-to-top {
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
 }
