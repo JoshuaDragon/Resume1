@@ -4,23 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Hinds's Resume6</title>
+    <link rel="stylesheet" href="Animation.css">
+    <title>Joshua Hinds's Resume7</title>
     <link rel="stylesheet" href="Stylesheet.css">
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
   </head>
   <body>
   <aside>
     <header id="heading">
+      <div id="picture">
       <div class="circular--portrait"><img src="Images/myself.jpg" alt="myself" height="300" width="250"></div>
+    </div>
         <h1>Joshua Hinds</h1>
         <p>This is my personal introductory statement.</p> 
     </header>
-
-    <a id="back-to-top" href="#top">
-      <button >
-          &uarr;
-      </button>
-  </a>
 
   <main>
       <div id="sidebar">
@@ -83,10 +80,27 @@
 
     <footer id="footer">
       <h2 id="Contact" style="color: white;">Contact Details</h2>
-        <a href="https://github.com/">Github</a>
+
+        <form action="https://formsubmit.co/hindseo2@gmail.com" method="POST">
+          <p>Name: <input type="text" name="name" required placeholder="letters only"></p>
+          <p>Surname: <input type="text" name="surname" required placeholder="letters only"></p>
+          <p>Email: <input type="email" name="email" id="" required placeholder="email here"></p>
+          <p>Subject: <select name="_subject" id="Subject" required>
+            <option value="Resume Feedback">Resume Feedback</option>
+            <option value="Problems">Problems</option>
+            <option value="Other">Other</option>
+          </select></p>
+
+          <br>
+
+          <p><label for="about">About: </label></p>
+          <textarea id="about" name="message" id="text" cols="30" rows="10" placeholder="Optional"></textarea>
+          
         <br>
-        <a href="https://mail.google.com" target="hindseo2@gmail.com">Gmail</a>
-        <p>Phone: 0814272382</p>
+
+        <input class="submit" type="submit" value="Submit">
+        
+        </form>
     </footer>
 
   </body>
