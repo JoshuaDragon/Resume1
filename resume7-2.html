@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Animation.css">
     <title>Joshua Hinds's Resume7</title>
     <link rel="stylesheet" href="Stylesheet.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
   </head>
   <body>
-  <aside>
+  <aside> 
+    <nav id="navbar">
+      <a class="nav-link" href="#Education">Education</a> |
+      <a class="nav-link" href="#Experience">Experience</a> |
+      <a class="nav-link" href="#Skills">Skills</a> |
+      <a class="nav-link" href="#Contact">Contact</a>
+  </nav>
     <header id="heading">
+      <div class="hero-image">
       <div id="picture">
-      <div class="circular--portrait"><img src="Images/myself.jpg" alt="myself" height="300" width="250"></div>
-    </div>
-        <h1>Joshua Hinds</h1>
-        <p>This is my personal introductory statement.</p> 
+        <div class="circular--portrait">
+        <picture>
+          <source srcset="Images/myselfsmall.jpg" media="(max-width: 500px)">
+          <source srcset="Images/myselfmedium.jpg" media="(max-width: 800px)">
+          <img src="Images/myselfsmall.jpg" alt="myself" height="300" width="250"></div>
+        </picture>
+      </div>
+        <div class="hero-text">
+          <h1>Joshua Hinds</h1>
+          <p>This is my personal introductory statement.</p>
+        </div>
+      </div>
     </header>
 
+
   <main>
-      <div id="sidebar">
-        <h2 style="color: blue;">Menu</h2>
-        <ul>
-          <li><a href="#Education">Education</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>
-      </div>
   </aside>
 
 <article>
     <section>
     <h2 id="Education">Education</h2>
-      <h3>Intro to Web at <a href="http://codespace.co.za/">CodeSpace Academy</a></h3>
+      <h4>Intro to Web at <a href="http://codespace.co.za/">CodeSpace Academy</a></h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h3>Qualification 2</h3>
+      <h4>Qualification 2</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </section>
 
@@ -44,7 +51,7 @@
     
     <section>
     <h2 id="Experience">Experience</h2>
-      <h3>Job 1</h3>
+      <h4>Job 1</h4>
       <p></p>
       <ul>
         <li>A sentence about the responsibilities of the job</li>
@@ -52,7 +59,7 @@
         <li>A sentence about the responsibilities of the job</li>
         <li>A sentence about the responsibilities of the job</li>
       </ul>
-      <h3>Job 2</h3>
+      <h4>Job 2</h4>
       <p></p>
       <ul>
         <li>A sentence about the responsibilities of the job</li>
